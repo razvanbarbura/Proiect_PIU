@@ -6,16 +6,18 @@
 <body>
 	<hr><h1> Invita un prieten</h1><hr>
 	<div class="container">
-	    <form class="friend-form">
+	    <form id="friend-form">
+			<ul id="submitlist"></ul>
 			<label for="email" > Email:</label>
 			<input type="email" id="email" placeholder="Intoduceti o adresa de email"/>
 			<label for="mesaj" > Mesaj:</label>
-			<input type="text" id="mesaj" value=""/>
+			<textarea id="mesaj">Salut te invit sa folosesti aplicatia My Cluj. Aici este un link: www.mycluj.ro
+			</textarea>
 		
 			<input type="reset" id="anuleaza" value="Anuleaza"/>
-			<input type="submit" id="Trimite" value="Trimite"/>
+			<input type="submit" id="trimite" value="Trimite"/>
 		</form>
-	
+	    <button id="back-button"> Inapoi </button>
 	</div>
 
 </body>
