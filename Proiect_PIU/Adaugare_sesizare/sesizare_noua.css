@@ -1,0 +1,66 @@
+h1{
+  text-align: center;
+}
+
+.sesizare{
+	margin-left: 38%;
+}
+
+.filtrare{
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+.check{
+	margin-left: 43%;
+}
+
+textarea{
+	width: 310px;
+	height: 80px;
+}
+
+.camera { 
+	width: 100px;
+	height: 100px;
+	margin-right: 2px;
+	margin-bottom: 15px;
+}
+
+.anuleaza{
+	margin-right: 148px;
+}
+
+button{
+	background-color: #5f9d9d;
+	height: 30px;
+	width: 80px;
+}
+
+.back{
+	margin-top: 35px;
+}
+
+#calendar_icon{
+	width: 30px;
+	height: 30px;
+	float:left;
+}
+
+#location_icon {
+	width: 30px;
+	height: 30px;
+}
+
+#calendar{
+	float: left;
+}
+
+#location{
+	float: right;
+	margin-right: 62%;
+}
+
+.page{
+	clear: both;
+}
