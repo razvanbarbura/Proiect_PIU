@@ -1,8 +1,12 @@
-window.onload =init 
+$(document).ready(() => {
 
-function onBack(){
-    window.location.reload()
-}
+    $('#back-button').on('click', function () {
+        window.location.href = '../Pagina_start/pagina_start.html'
+    });
+
+});
+
+window.onload =init 
 
 
 function init(){
