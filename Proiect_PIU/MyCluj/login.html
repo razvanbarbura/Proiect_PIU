@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="detalii_sesizare/filtrare_sesizari.css" />
+		<link rel="stylesheet" href="login/login.css" />
 	</head>
 	<body class="subpage">
 
@@ -15,9 +15,6 @@
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
 				<a href="index.html" class="logo"><img src="images/logo.png" width="80" /></a>
-				<nav class="right">
-					<p>Welcome, Mircea!</p>
-				</nav>
 			</header>
 
 		<!-- Menu -->
@@ -38,13 +35,28 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Adăugare sesizare</h1>
-						<p>Adaugă o sesizare.</p>
+						<h1>Login</h1>
+						<p>Intra in contul tau.</p>
 					</header>
 
 			</section>
 			
-			<div id="googleMap"></div>
+			<form>
+				<div class="container">
+					<label for="username"><b>Username</b></label>
+					<input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+					<label for="password"><b>Password</b></label>
+					<input id="password" type="password" placeholder="Enter Password" name="password" required><br>
+				
+					<button id="login-button" type="submit">Login</button>
+					<div class="6u 12u$(small)">
+						<input type="checkbox" id="remember" name="remember" checked>
+						<label for="remember">Remember me</label>
+					</div>
+				</div>
+
+			</form>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -65,8 +77,8 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="detalii_sesizare/filtrare_sesizari.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
+			<script src="login/login.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 			
 	</body>
