@@ -1,0 +1,134 @@
+.sesizare #location{
+	width: 355px;
+}
+
+.page #descriere_sesizare{
+	margin-bottom: 10px;
+	padding: 2px;
+}
+
+#googleMap{
+	width:45%;
+	height:45%;
+	position: center;
+	left: 55%;
+}
+
+#tip{
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+.dropdown{
+	margin-bottom: 0px;
+	width: 355px;
+}
+
+.sesizare{
+	margin-left: 14%;
+	margin-top: -27%;
+}
+
+.filtrare{
+	text-align: center; 
+	vertical-align: middle; 
+}
+
+.check{
+	margin-left: 43%;
+}
+
+textarea{
+	width: 355px;
+	height: 80px;
+}
+
+.camera { 
+	width: 115px;
+	height: 100px;
+	margin-top: 2px;
+	margin-right: 2px;
+	margin-bottom: 15px;
+}
+
+.anuleaza{
+	margin-right: 57px;
+}
+
+button{
+	background-color: #5f9d9d;
+	height: 50px;
+	width: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.back{
+	margin-top: 35px;
+	margin-bottom: 10px;
+}
+
+#calendar_icon{
+	width: 30px;
+	height: 30px;
+	float:left;
+}
+
+#location_icon {
+	width: 30px;
+	height: 30px;
+}
+
+.page{
+	clear: both;
+}
+
+#footer{
+	margin-left: -17%;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.85);
+  z-index: 10000;
+}
+
+.popup {
+  width: 98%;
+  padding: 15px;
+  left: 0;
+  margin-left: 1%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  top: -100%;
+  box-shadow: 5px 5px 5px #000;
+  z-index: 10001;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    width: 66.66666666%;
+    margin-left: 16.666666%;
+  }
+}
+
+@media (min-width: 992px) {
+  .popup {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup {
+    width: 33.33333%;
+    margin-left: 33.33333%;
+  }
+}
