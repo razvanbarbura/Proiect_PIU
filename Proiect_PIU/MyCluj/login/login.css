@@ -1,0 +1,21 @@
+input[type=text], input[type=password] {
+  display: inline-block;
+  width: 330px;
+}
+
+button {
+  width: 135px;
+}
+
+.container {
+  padding: 16px;
+  margin-left: 37%;
+}
+
+.container #username, #password{
+	margin-bottom: 10px;
+}
+
+label{
+	margin-bottom: 2px;
+}
