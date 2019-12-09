@@ -13,13 +13,14 @@
 }
 
 #back-button{
+  
   height:50px;
   border-radius: 10px;
   width: 100px;
   font-size: 16px;
   background-color: #88bdbd;
   margin-left: 250px;
-  margin-top: 30px;
+  margin-top: auto;
 }
 
 h1{
@@ -57,6 +58,18 @@ h1{
 }
 
 
+ul {
+  list-style-type: none;
+}
 
+#messageButton{
+  height:50px;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 12px;
+  background-color: #88bdbd;
+  margin-left: 250px;
+  margin-top: 30px;
+}
 
 

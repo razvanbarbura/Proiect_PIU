@@ -17,15 +17,18 @@
 			 <img src="../Images/semn_parcarejpg.jpg" width="180px" height="180px">
 			 <img src="../Images/camera_icon.jpg" width="180px" height="180px">
 			 <br/>
-			 <img src="../Images/like.png" width="25px" height="25px" id="like_img">
+			 <img src="../Images/like-pressed.jpg" width="25px" height="25px" id="like_img" onclick="like()">
 			 <p id="like_number"> 3 </p>
-			 <img src="../Images/dislike.jpg" width="50px" height="25px" id="dislike_img">
+			 <img src="../Images/dislike_pressed.jpg" width="50px" height="25px" id="dislike_img" onclick="dislike()">
 			 <p id ="dislike_number"> 0</p>
-			 <label for="comentariu"> Lasa un comentariu:</label>
+			 <label for="comentariu"> Adauga un comentariu:</label>
 			 <br/></br>
+			 <ul id="messageList"></ul>
 			 <textarea id="comment"></textarea>
+			 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
+			 <button id="back-button"> Inapoi </button>
 		 </div>
-	    <button id="back-button"> Inapoi </button>
+	   
 	</div>
 
 </body>
