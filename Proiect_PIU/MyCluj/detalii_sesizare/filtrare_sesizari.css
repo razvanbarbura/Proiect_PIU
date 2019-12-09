@@ -1,0 +1,19 @@
+h1{
+  text-align: center;
+}
+
+.filtrare{
+	text-align: center; 
+	
+}
+
+.check{
+	margin-left: 43%;
+}
+
+#googleMap{
+	width:25%;
+	height:25%;
+	position: center;
+	left: 70%;
+}
