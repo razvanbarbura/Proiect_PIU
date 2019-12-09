@@ -53,12 +53,12 @@ window.onload = function(){
     };
 	
 	fileupload2.onchange = function () {
-        var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
+        var fileName = fileupload2.value.split('\\')[fileupload2.value.split('\\').length - 1];
         image2.setAttribute("src", "../Images/" + fileName);
     };
 	
 	fileupload3.onchange = function () {
-        var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
+        var fileName = fileupload3.value.split('\\')[fileupload3.value.split('\\').length - 1];
         image3.setAttribute("src", "../Images/" + fileName);
     };
 }

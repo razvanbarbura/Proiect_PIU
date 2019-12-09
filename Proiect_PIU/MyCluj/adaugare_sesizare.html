@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="adaugare_sesizare/filtrare_sesizari.css" />
+		<link rel="stylesheet" href="adaugare_sesizare/adaugare_sesizare.css" />
 	</head>
 	<body class="subpage">
 
@@ -43,12 +43,52 @@
 						<p>Adaugă o sesizare.</p>
 					</header>
 
-					<form class="check">
-						<input id="location" type="text" placeholder="Location" required>
-					</form>
+					
 			</section>
 			
 			<div id="googleMap"></div>
+			
+			<div class="sesizare">
+				<div>
+					<div id="calendar">
+						<img src="images/calendar_icon.png" id="calendar_icon">
+						<p id="date"></p>
+					</div>
+					Alege locatia:
+					<input id="location" type="text" placeholder="Locatie" required>
+				</div>
+				<div class="page">
+					<p id="tip">Tipul sesizarii:</p>
+					<div>
+						 <select name="categorii" class="dropdown" id="categorii">
+							<option value="Selecteaza_categoria">Selecteaza categoria</option>
+							<option value="Asistenta_sociala">Asistenta sociala</option>
+							<option value="Parcari_neregulamentare">Parcari neregulamentare</option>
+							<option value="Strazi/alei/trotuare/poduri">Strazi/alei/trotuare/poduri</option>
+							<option value="Retele_de_apa/canalizare">Retele de apa/canalizare</option>
+							<option value="Transport_public">Transport public</option>
+							<option value="Altele">Altele</option>
+						</select><br>
+						<textarea id="descriere_sesizare" name="descriere" placeholder="Descriere sesizare"></textarea>
+					</div>
+					Adaugare poza/video
+					<div>
+						<input type="file" id="FileUpload1" style="display: none" />
+						<input type="file" id="FileUpload2" style="display: none" />
+						<input type="file" id="FileUpload3" style="display: none" />
+						<img id="cam" class="camera" alt="Select File" src="images/camera_icon.jpg" class="camera" style="cursor: pointer" >
+						<img id="cam2" class="camera" alt="Select File" src="images/camera_icon.jpg" class="camera" style="cursor: pointer" >
+						<img id="cam3" class="camera" alt="Select File" src="images/camera_icon.jpg" class="camera" style="cursor: pointer" >
+					</div>
+					<div>
+						<button type="button" class="anuleaza">Anuleaza</button>
+						<button type="button" onclick="trimite()">Trimite</button>
+					</div>
+					<div>
+						<button type="button" class="back">Inapoi</button>
+					</div>
+				<div>
+			</div>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -69,7 +109,9 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="adaugare_sesizare/filtrare_sesizari.js"></script>
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="adaugare_sesizare/adaugare_sesizare.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
 
 			
