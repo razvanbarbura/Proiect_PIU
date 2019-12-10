@@ -1,11 +1,12 @@
 
 <html>
 	<head>
-		<title>Adăugare sesizare</title>
+		<title>Detalii sesizare</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="detalii_sesizare/filtrare_sesizari.css" />
+		<link rel="stylesheet" href="detalii_sesizare/detalii_sesizare.css"/>
 	</head>
 	<body class="subpage">
 
@@ -39,13 +40,44 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Adăugare sesizare</h1>
-						<p>Adaugă o sesizare.</p>
+						<h1>Detalii sesizare</h1>
+						<p>Detalii sesizare.</p>
 					</header>
 
 			</section>
 			
-			<div id="googleMap"></div>
+
+
+			<div class="container">
+				 <div id="div_detalii">
+					 <p> Categorie : Parcari neregulamentare</p>
+					 <p> Data : 27/10/2019 </p>
+					 <p> Status : In proggres</p>
+					 <p> Descriere : Masina parcata neregulamentar pe strada George Baritiu</p>
+					 <img src="../Images/masina_parcata.jpg" width="180px" height="180px">
+					 <img src="../Images/semn_parcarejpg.jpg" width="180px" height="180px">
+					 <img src="../Images/camera_icon.jpg" width="180px" height="180px">
+					 <br/>
+					 <img src="../Images/like-pressed.jpg" width="25px" height="25px" id="like_img" onclick="like()">
+					 <p id="like_number"> 3 </p>
+					 <img src="../Images/dislike_pressed.jpg" width="50px" height="25px" id="dislike_img" onclick="dislike()">
+					 <p id ="dislike_number"> 0</p>
+					 <label for="comentariu"> Adauga un comentariu:</label>
+					 <br/></br>
+					 <ul id="messageList"></ul>
+					 <textarea id="comment"></textarea>
+					 <br/>
+					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
+					 <button id="back-button"> Inapoi </button>
+				 </div>
+			   
+			</div>
+		
+
+
+
+
+			<!-- <div id="googleMap"></div> -->
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -66,7 +98,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
+			<script src="detalii_sesizare/detalii_sesizare.js"></script>
 			<script src="detalii_sesizare/filtrare_sesizari.js"></script>
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
 
 			

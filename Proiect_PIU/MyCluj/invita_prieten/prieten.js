@@ -1,22 +1,13 @@
-$(document).ready(() => {
+window.onload = init;
 
-    $('#back-button').on('click', function () {
-        window.location.href = '../MyCluj/index.html'
-     
-    });
-
-});
-
-window.onload =init 
 
 message_error= document.getElementById("eroare-mesaj");
 email_error= document.getElementById("eroare-email");
 
 
-
 function init(){
-
-  //  document.getElementById("friend-form").onreset = resetForm;
+    document.getElementById("mesaj").onblur = validateMessage;
+    document.getElementById("email").onblur = validateEmail;
     document.getElementById("friend-form").onsubmit = submitForm;
 }
 
@@ -51,16 +42,13 @@ function validateMessage() {
 }
 
 
-function resetForm() {
-    document.getElementById("eroare-mesaj").innerHTML = "";
-    document.getElementById("eroare-email").innerHTML = "";
-}
-
 
 function submitForm() {
     
-       if ( validateEmail() == true &&   validateMessage() ==true ) {
-        return true; 
+       if ((validateEmail() == true) &&   (validateMessage() == true)) {
+     
+        window.location.href = "index.html";
+        return false; 
       } else {
         return false; 
       }
@@ -68,7 +56,7 @@ function submitForm() {
 
 
 
-  function showPrompt_anulare(msg)
+  function showPrompt(msg)
 {
   // CREATE A Promise TO RETURN
   var p = new Promise(function(resolve, reject) {;
@@ -104,21 +92,37 @@ function submitForm() {
 $(function() {
     // HANDLE open-dialog CLICK
     $('#anuleaza').on('click',function(e) {
-      
         // PREVENT DEFAULT BEHAVIOUR FOR <a/>
         e.preventDefault();
 
         // SAVE PROMISE RETURN
-        var res = showPrompt_anulare('Confirmati stergerea datelor introduse?');
+        var res = showPrompt('Confirmati stergerea datelor introduse?');
         res.then(function(ret) {
             if (ret){
-                document.getElementById('cam').setAttribute('src', 'images/camera_icon.jpg');
-                document.getElementById('cam2').setAttribute('src', 'images/camera_icon.jpg');
-                document.getElementById('cam3').setAttribute('src', 'images/camera_icon.jpg');
-                document.getElementById('location').value = '';
-                document.getElementById('descriere_sesizare').value = '';
-                document.getElementById('categorii').value = 'Selecteaza_categoria';
+                document.getElementById("eroare-mesaj").innerHTML = "";
+                document.getElementById("eroare-email").innerHTML = "";
+                document.getElementById('email').value = '';
+                document.getElementById('mesaj').value = 'Salut te invit sa folosesti aplicatia My Cluj. Aici este un link: www.mycluj.ro';
             }
-       })
+        })
     });
 });
+
+
+$(function() {
+    // HANDLE open-dialog CLICK
+    $('#back-button').on('click',function(e) {
+        // PREVENT DEFAULT BEHAVIOUR FOR <a/>
+        e.preventDefault();
+
+        // SAVE PROMISE RETURN
+        var res = showPrompt('Daca parasiti pagina o sa va pierdeti datele introduse. Confirmati aceasta actiune?');
+        res.then(function(ret) {
+            if (ret){
+                window.location.href = "index.html";
+            }
+        })
+    });
+});
+
+
