@@ -128,7 +128,8 @@ function myMap() {
 	var marker8 = createPin(map, 46.756653, 23.617627, 'Masina parcata pe 2 parcari', contentString, "images/parcari.png", "parcari");
 	// Pin 9 (parcari)
 	contentString = '<h1>Masina parcata in zona interzisa</h1>'+
-						 '<p>Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>';
+						 '<p>Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>'+
+						 '<a href="detalii_sesizare.html">Detalii</a>';
 	var marker9 = createPin(map, 46.769892, 23.610656, 'Masina parcata in zona interzisa', contentString, "images/parcari.png", "parcari");
 	// Pin 10 (transport)
 	contentString = '<h1>Autobuz mizerabil</h1>'+
