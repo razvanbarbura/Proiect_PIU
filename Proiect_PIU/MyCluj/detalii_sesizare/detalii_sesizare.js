@@ -46,13 +46,46 @@ function dislike(){
 
 }
 
+function initialComment(){
+	var messages = document.getElementById("messageList");
+	
+	var objToday = new Date(),
+	weekday = new Array('Duminică', 'Luni', 'Marți', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă'),
+	dayOfWeek = weekday[objToday.getDay()],
+	dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate(),
+	months = new Array('Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'),
+	curMonth = months[objToday.getMonth()],
+	curYear = objToday.getFullYear(),
+	curHour = objToday.getHours(),
+	curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
+	
+	var today = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
+	var today2 = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
+
+	messages.innerHTML += "<li><img src='../Images/Avatar1.PNG' width='25px' height='25px' id='avatar'>" + " <b>Izabela</b> &nbsp;&nbsp;&nbsp;<i>" + today2 + "</i><br>"+ "Am vorbit cu portarul să sune la poliție. Trăim în așa o societate..." + "</li>";
+
+	messages.innerHTML += "<li><img src='../Images/Avatar2.PNG' width='25px' height='25px' id='avatar'>" + " <b>Andrei</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ "Trebuie să vorbești cu portarul din zonă." + "</li>";
+	
+}
+
 
 function addComent(){
     var messages = document.getElementById("messageList");
     var mesaj =  document.getElementById("comment");
     if(mesaj.value.length > 0)
     {
-        messages.innerHTML += "<li>" + "Mircea: "+ mesaj.value + "</li>";
+		var objToday = new Date(),
+		weekday = new Array('Duminică', 'Luni', 'Marți', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă'),
+		dayOfWeek = weekday[objToday.getDay()],
+		dayOfMonth = today + ( objToday.getDate() < 10) ? '0' + objToday.getDate() + domEnder : objToday.getDate(),
+		months = new Array('Ianuarie', 'Februarie', 'Martie', 'Aprilie', 'Mai', 'Iunie', 'Iulie', 'August', 'Septembrie', 'Octombrie', 'Noiembrie', 'Decembrie'),
+		curMonth = months[objToday.getMonth()],
+		curYear = objToday.getFullYear(),
+		curHour = objToday.getHours(),
+		curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
+		var today = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
+
+        messages.innerHTML = "<li><img src='../Images/Avatar3.PNG' width='25px' height='25px' id='avatar'>" + " <b>Mircea</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ mesaj.value + "</li>" + messages.innerHTML;
         mesaj.value="";
     }
 }
@@ -140,7 +173,9 @@ function myMap() {
 	var contentString = null;
 	
 	// Pin 1 (parcari)
-	contentString = '<h1>Parcare neregulamentara</h1>'+
-						 '<p>Un individ a parcat in fata statiei de tramvai.</p>';
+	contentString = '<h1>Masina parcata in zona interzisa</h1>'+
+						 '<p>Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>';
 	var marker1 = createPin(map, 46.769892, 23.610656, 'Parcare neregulamentara', contentString, "images/parcari.png", "parcari");
+	
+	initialComment();
 }

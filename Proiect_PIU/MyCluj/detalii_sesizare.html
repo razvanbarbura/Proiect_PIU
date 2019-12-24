@@ -17,7 +17,8 @@
 				</nav>
 				<a href="index.html" class="logo"><img src="images/logo.png" width="80" /></a>
 				<nav class="right">
-					<p>Welcome, Mircea!</p>
+					<a>Bun venit, Mircea!</a>
+					<a href="login.html" class="button alt">Deconectare</a>
 				</nav>
 			</header>
 
@@ -41,37 +42,39 @@
 				<div class="inner">
 					<header class="align-center">
 						<h1>Detalii sesizare</h1>
-						<p>Detalii sesizare.</p>
+						<p>Mașină parcată în zonă interzisă</p>
 					</header>
 
 			</section>
 
+			<div id="googlemap"></div>
+				
 			<div class="container">
 				 <div id="div_detalii">
-					 <p> Categorie : Parcari neregulamentare</p>
-					 <p> Data : 27/10/2019 </p>
-					 <p> Status : In proggres</p>
-					 <p> Descriere : Masina parcata neregulamentar pe strada George Baritiu</p>
+					 <p><b>Categorie:</b> Parcari neregulamentare</p>
+					 <p><b>Data:</b> 27/10/2019 </p>
+					 <p><b>Status:</b> In proggres</p>
+					 <p><b>Descriere:</b> Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>
 					 <img src="../Images/masina_parcata.jpg" width="180px" height="180px">
 					 <img src="../Images/semn_parcarejpg.jpg" width="180px" height="180px">
 					 <img src="../Images/camera_icon.jpg" width="180px" height="180px">
 					 <br/>
-					 <img src="../Images/like-pressed.jpg" width="25px" height="25px" id="like_img" onclick="like()">
-					 <p id="like_number"> 3 </p>
-					 <img src="../Images/dislike_pressed.jpg" width="50px" height="25px" id="dislike_img" onclick="dislike()">
-					 <p id ="dislike_number"> 0</p>
-					 <label for="comentariu"> Adauga un comentariu:</label>
-					 <br/></br>
-					 <ul id="messageList"></ul>
+					 <img src="images/like-pressed.png" width="25px" height="25px" id="like_img" onclick="like()">
+					 <p id="like_number">3</p>
+					 <img src="images/dislike_pressed.png" width="25px" height="25px" id="dislike_img" onclick="dislike()">
+					 <p id ="dislike_number">0</p>
+					 <label for="comentariu"> Comentarii</label>
+					 <ul id="messageList"> </ul>
 					 <textarea id="comment"></textarea>
 					 <br/>
 					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
 					 <button id="back-button"> Inapoi </button>
+					 
 				 </div>
 			   
 			</div>
 			
-			<div id="googlemap"></div>
+			
 
 			
 

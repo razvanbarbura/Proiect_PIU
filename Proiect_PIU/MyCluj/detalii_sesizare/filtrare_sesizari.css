@@ -11,9 +11,23 @@ h1{
 	margin-left: 43%;
 }
 
+.div_detalii {
+	margin-left: 14%;
+	margin-top: -27%;
+}
+
+#googleMap{
+	width:45%;
+	height:45%;
+	position: center;
+	left: 55%;
+}
+
+/*
 #googleMap{
 	width:75%;
 	height:75%;
 	position: center;
 	left: 15%;
 }
+*/
