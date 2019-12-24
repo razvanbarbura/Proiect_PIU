@@ -11,25 +11,25 @@
 
 		<!-- Header -->
 			<header id="header">
-				<nav class="left">
+				<nav id="menuLogo" class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
 				<a href="index.html" class="logo"><img src="images/logo.png" width="80" /></a>
 				<nav class="right">
 					<a>Bun venit, Mircea!</a>
-					<a href="login.html" class="button alt">Deconectare</a>
+					<a href="login.html" id="deconectare" class="button alt">Deconectare</a>
 				</nav>
 			</header>
 
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Meniu principal</a></li>
-					<li><a href="cautare_sesizare.html">Căutare sesizare</a></li>
-					<li><a href="adaugare_sesizare.html">Adăugare sesizare</a></li>
-					<li><a href="prieten.html">Invita prieten</a></li>
-					<li><a href="x.html">Vouchere</a></li>
-					<li><a href="setari.html">Setari</a></li>
+					<li><a id="mainMenu" href="index.html">Meniu principal</a></li>
+					<li><a id="cautareSesizare" href="cautare_sesizare.html">Căutare sesizare</a></li>
+					<li><a id="adaugaSesizare" href="adaugare_sesizare_dizabilitate.html">Adăugare sesizare</a></li>
+					<li><a id="invita" href="prieten.html">Invita prieten</a></li>
+					<li><a id="vouchere" href="x.html">Vouchere</a></li>
+					<li><a id="settings" href="setari.html">Setari</a></li>
 				</ul>
 				<ul class="actions vertical">
 					<li><a href="#" class="button fit">Login</a></li>
@@ -40,7 +40,7 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Adăugare sesizare</h1>
+						<h1 id="adaugare_sesizare">Adăugare sesizare</h1>
 						<p>Adaugă o sesizare.</p>
 					</header>
 
@@ -60,7 +60,7 @@
 				</div>
 				<div class="page">
 					<p id="tip">Tipul sesizarii:</p>
-					<div>
+					<div id="tipS">
 						 <select name="categorii" class="dropdown" id="categorii">
 							<option value="Selecteaza_categoria">Selecteaza categoria</option>
 							<option value="Asistenta_sociala">Asistenta sociala</option>
@@ -73,7 +73,7 @@
 						<textarea id="descriere_sesizare" name="descriere" placeholder="Descriere sesizare"></textarea>
 					</div>
 					Adaugare poza/video
-					<div>
+					<div id="poza">
 						<input type="file" id="FileUpload1" style="display: none" />
 						<input type="file" id="FileUpload2" style="display: none" />
 						<input type="file" id="FileUpload3" style="display: none" />
@@ -82,11 +82,11 @@
 						<img id="cam3" class="camera" alt="Select File" src="images/camera_icon.jpg" class="camera" style="cursor: pointer" >
 					</div>
 					<div>
-						<button type="button" class="anuleaza">Anuleaza</button>
-						<button type="button" onclick="trimite()">Trimite</button>
+						<button type="button" id="anuleaza" class="anuleaza">Anuleaza</button>
+						<button type="button" id="trimite" onclick="trimite()">Trimite</button>
 					</div>
 					<div>
-						<button type="button" class="back">Inapoi</button>
+						<button type="button" id="back-button" class="back">Inapoi</button>
 					</div>
 				<div>
 			</div>
@@ -109,9 +109,11 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 			
 			<script src="http://code.jquery.com/jquery.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="adaugare_sesizare/adaugare_sesizare_dizabilitate.js"></script>
 			<script src="adaugare_sesizare/adaugare_sesizare.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
 
