@@ -1,12 +1,10 @@
-
 <html>
 	<head>
-		<title>Detalii sesizare</title>
+		<title>Metoda de contactare</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="detalii_sesizare/filtrare_sesizari.css" />
-		<link rel="stylesheet" href="detalii_sesizare/detalii_sesizare.css"/>
+		<link rel="stylesheet" href="metoda_contactare_rezolvare_sarcina/metoda_contactare_rezolvare_sarcina.css" />
 	</head>
 	<body class="subpage">
 
@@ -41,43 +39,28 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Detalii sesizare</h1>
-						<p>Mașină parcată în zonă interzisă</p>
+						<h1>Alegere metoda de contactare</h1>
+						<p>Alege metoda de contactare.</p>
 					</header>
 
+					
 			</section>
-
-			<div id="googlemap"></div>
-				
-			<div class="container">
-				 <div id="div_detalii">
-					 <p><b>Categorie:</b> Parcari neregulamentare</p>
-					 <p><b>Data:</b> 27/10/2019 </p>
-					 <p><b>Status:</b> In proggres</p>
-					 <p><b>Descriere:</b> Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>
-					 <img src="../Images/masina_parcata.jpg" width="180px" height="180px">
-					 <img src="../Images/semn_parcarejpg.jpg" width="180px" height="180px">
-					 <img src="../Images/camera_icon.jpg" width="180px" height="180px">
-					 <br/>
-					 <img src="images/like-pressed.png" width="25px" height="25px" id="like_img" onclick="like()">
-					 <p id="like_number">3</p>
-					 <img src="images/dislike_pressed.png" width="25px" height="25px" id="dislike_img" onclick="dislike()">
-					 <p id ="dislike_number">0</p>
-					 <label for="comentariu"> Comentarii</label>
-					 <ul id="messageList"> </ul>
-					 <textarea id="comment"></textarea>
-					 <br/>
-					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
-					 <button id="rezolvareButton"> Rezolvare sesizare</button>
-					 <button id="back-button"> Inapoi </button>
-					 
-				 </div>
-			   
+			
+			<form id="contactare_form">
+				<div class="6u 12u$(small)">
+					<input type="checkbox" id="contactare_telefon" name="contactare_telefon">
+					<label for="contactare_telefon">Telefon</label>
+				</div>
+				<div class="6u 12u$(small)">
+					<input type="checkbox" id="contactare_email" name="contactare_email">
+					<label for="contactare_email">Email</label>
+				</div>
+			</form>
+			<div id="button_div">
+				<button id="anuleaza-button"> Anuleaza </button>
+				<button onclick="trimite()" id="trimite-button"> Trimite </button>
+				<button id="back-button"> Inapoi </button>
 			</div>
-			
-			
-
-			
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -98,10 +81,9 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="detalii_sesizare/detalii_sesizare.js"></script>
 			<script src="http://code.jquery.com/jquery.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
+			<script src="metoda_contactare_rezolvare_sarcina/metoda_contactare_rezolvare_sarcina.js"></script>
 
 			
 	</body>

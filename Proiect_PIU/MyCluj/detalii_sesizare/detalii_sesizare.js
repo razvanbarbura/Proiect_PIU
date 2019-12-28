@@ -141,6 +141,15 @@ $(function() {
     });
 });
 
+$(function() {
+    // HANDLE open-dialog CLICK
+    $('#rezolvareButton').on('click',function(e) {
+        // PREVENT DEFAULT BEHAVIOUR FOR <a/>
+        e.preventDefault();
+
+        window.location.href = "metoda_contactare_rezolvare_sarcina.html";
+    });
+});
 
 function createPin(map, latitude, longitude, titleContent, content, icon, type)
 {

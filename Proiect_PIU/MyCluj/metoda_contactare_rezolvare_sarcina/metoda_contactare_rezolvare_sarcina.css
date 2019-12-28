@@ -1,0 +1,20 @@
+#contactare_form{
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+	margin-bottom: 20px;
+}
+
+#button_div{
+  text-align: center;
+}
+
+#footer{
+	margin-left: -17%;
+}
