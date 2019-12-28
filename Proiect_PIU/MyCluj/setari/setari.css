@@ -4,7 +4,7 @@
 }
 
 #friend-form{
-    height: 125px;
+    height: 200px;
     width: 500px;
     padding: 10px;
     border-radius: 10px;
@@ -23,11 +23,9 @@ textarea{
 
 #button_div{
   text-align: center;
-
 }
 
 #back-button{
-  
   font-size: 16px;
 }
 
@@ -46,4 +44,8 @@ input[type="reset"]{
 h1{
   text-align: center;
 
+}
+
+#notificare_pop_up, #notificare_email{
+	margin-left:20%;
 }

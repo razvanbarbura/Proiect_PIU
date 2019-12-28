@@ -108,3 +108,30 @@ $(function() {
         })
     });
 });
+
+$(function(){
+    $('#notificare').click(function() {
+        if(!$(this).is(':checked')) {
+			console.log("unckecked");
+			document.getElementById('notificare_pop_up').checked = false;
+			document.getElementById('notificare_email').checked = false;
+			document.getElementById('notificare_pop_up').disabled = true;
+			document.getElementById('notificare_email').disabled = true;
+		}
+		else {
+			console.log("ckecked");
+			document.getElementById('notificare_pop_up').disabled = false;
+			document.getElementById('notificare_email').disabled = false;
+			$('#notificare_pop_up').click(function() {
+				if($('#notificare_pop_up').is(':checked')) {
+					document.getElementById('notificare_email').checked = false;
+				}
+			});
+			$('#notificare_email').click(function() {
+				if($('#notificare_email').is(':checked')) {
+					document.getElementById('notificare_pop_up').checked = false;
+				}
+			});
+		}
+    });
+});
