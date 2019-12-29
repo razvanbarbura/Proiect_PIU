@@ -62,9 +62,9 @@ function initialComment(){
 	var today = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
 	var today2 = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
 
-	messages.innerHTML += "<li><img src='../Images/Avatar1.PNG' width='25px' height='25px' id='avatar'>" + " <b>Izabela</b> &nbsp;&nbsp;&nbsp;<i>" + today2 + "</i><br>"+ "Am vorbit cu portarul să sune la poliție. Trăim în așa o societate..." + "</li>";
+	messages.innerHTML += "<li><img src='./images/Avatar1.PNG' width='25px' height='25px' id='avatar'>" + " <b>Izabela</b> &nbsp;&nbsp;&nbsp;<i>" + today2 + "</i><br>"+ "Am vorbit cu portarul să sune la poliție. Trăim în așa o societate..." + "</li>";
 
-	messages.innerHTML += "<li><img src='../Images/Avatar2.PNG' width='25px' height='25px' id='avatar'>" + " <b>Andrei</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ "Trebuie să vorbești cu portarul din zonă." + "</li>";
+	messages.innerHTML += "<li><img src='./images/Avatar2.PNG' width='25px' height='25px' id='avatar'>" + " <b>Andrei</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ "Trebuie să vorbești cu portarul din zonă." + "</li>";
 	
 }
 
@@ -85,7 +85,7 @@ function addComent(){
 		curMinute = objToday.getMinutes() < 10 ? "0" + objToday.getMinutes() : objToday.getMinutes();
 		var today = curHour + ":" + curMinute + " - " + dayOfWeek + ", " + dayOfMonth + " " + curMonth + " " + curYear;
 
-        messages.innerHTML = "<li><img src='../Images/Avatar3.PNG' width='25px' height='25px' id='avatar'>" + " <b>Mircea</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ mesaj.value + "</li>" + messages.innerHTML;
+        messages.innerHTML = "<li><img src='./images/Avatar3.PNG' width='25px' height='25px' id='avatar'>" + " <b>Mircea</b> &nbsp;&nbsp;&nbsp;<i>" + today + "</i><br>"+ mesaj.value + "</li>" + messages.innerHTML;
         mesaj.value="";
     }
 }
