@@ -1,11 +1,11 @@
 
 <html>
 	<head>
-		<title>Detalii sesizare</title>
+		<title>Monitorizare</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="detalii_sesizare/detalii_sesizare.css"/>
+		<link rel="stylesheet" href="monitorizare_personal/monitorizare_personal.css"/>
 	</head>
 	<body class="subpage">
 
@@ -26,7 +26,6 @@
 				<ul class="links">
 					<li><a href="index.html">Meniu principal</a></li>
 					<li><a href="cautare_sesizare.html">Căutare sesizare</a></li>
-					<li><a href="adaugare_sesizare.html">Adăugare sesizare</a></li>
 					<li><a href="prieten.html">Invita prieten</a></li>
 					<li><a href="x.html">Vouchere</a></li>
 					<li><a href="setari.html">Setari</a></li>
@@ -47,9 +46,9 @@
 			</section>
 
 				
-			<div class="container">
+			<div class="container2">
 				 <div id="div_detalii">
-					<div id="googlemap"></div>
+					
 					 <p><b>Categorie:</b> Parcari neregulamentare</p>
 					 <p><b>Data:</b> 27/10/2019 </p>
 					 <p><b>Status:</b> In proggres</p>
@@ -57,17 +56,11 @@
 					 <img src="images/masina_parcata.jpg" width="250px" height="250px">
 					 <img src="images/semn_parcarejpg.jpg" width="250px" height="250px">
 					 <img src="images/camera_icon.jpg" width="250px" height="250px">
+					 
 					 <br/>
-					 <img src="images/like-pressed.png" width="25px" height="25px" id="like_img" onclick="like()">
-					 <p id="like_number">3</p>
-					 <img src="images/dislike_pressed.png" width="25px" height="25px" id="dislike_img" onclick="dislike()">
-					 <p id ="dislike_number">0</p>
-					 <label for="comentariu"> Comentarii</label>
-					 <ul id="messageList"> </ul>
-					 <textarea id="comment"></textarea>
-					 <br/>
-					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
-					 <button id="rezolvareButton"> Rezolvare sesizare</button>
+					 <button id="ok-button"> Alege</button>
+                     <button id="cancel-button"> Renunta</button>
+                     <br/>
 					 <button id="back-button"> Inapoi </button>
 					 
 				 </div>
@@ -93,10 +86,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="detalii_sesizare/detalii_sesizare.js"></script>
+            <script src="../MyCluj/monitorizare_personal/monitorizare_personal.js" type="text/javascript"></script>
 			<script src="http://code.jquery.com/jquery.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
+		
 
 			
 	</body>

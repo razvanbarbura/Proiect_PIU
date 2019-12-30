@@ -1,0 +1,88 @@
+/* ------------------------------------------------------------- monitorizare 1 */
+
+.container {
+    width: 100%;
+    height: 925px;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  #googleMap{
+	width:100%;
+	height:35%;
+    margin-bottom: 20px;
+}
+  
+
+#button-anuleaza{
+    width: 150px;
+}
+
+#button-continua{
+    width: 150px;
+    margin-left: 15px;
+}
+
+/* ---------------------------------------------------------- detalii */
+
+.container2 {
+  width: 100%;
+  height: 1200px;
+}
+
+#div_detalii{
+    height: 900px;
+    width: 95%;
+    padding: 10px;
+    margin:auto;
+  	margin-left: 8%;
+  	margin-top:  2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#ok-button{
+  height:50px;
+  border-radius: 10px;
+  width: 115px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+
+#cancel-button{
+  height:50px;
+  border-radius: 10px;
+  width: 115px;
+  font-size: 12px;
+  margin-left: 15%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+#back-button{
+  height:50px;
+  border-radius: 10px;
+  width: 115px;
+  font-size: 12px;
+}
+
+
+/* ------------------------------------------------------------- monitorizare 2 */
+
+
+.container3 {
+  width: 100%;
+  height: 925px;
+}
+
+#depozit-form{
+  height: 525px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
