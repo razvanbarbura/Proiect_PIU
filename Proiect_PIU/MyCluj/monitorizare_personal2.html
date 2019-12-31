@@ -40,22 +40,18 @@
 		<h1> Monitorizare Personal</h1>		
 		<div class="container3">
 			<img src="images/faza2.png" width="330px" height="130px">
-			<form id="depozit-form">
-				<label for="text" > Nume magazin/depozit:</label>
-				<input type="text" id="text" placeholder="Intoduceti numele magazinului/depozitului"/>
+			<div id="magazin-form">
+				<label for="magazin" > Nume magazin/depozit:</label>
+				<input type="text" id="magazin" placeholder="Intoduceti numele magazinului/depozitului"/>
 				<p id="eroare-magazin"></p>
 				
-				<label for="mesaj" > Mesaj:</label>
-				<textarea id="mesaj">Salut te invit sa folosesti aplicatia My Cluj. Aici este un link: www.mycluj.ro
-				</textarea>
-				<p id="eroare-mesaj"></p>
-				<input type="reset" id="anuleaza" value="Anuleaza"/>
-				<input type="submit" id="trimite" value="Trimite"/>
-			</form>
-	
-	
-			
-		
+				<label for="textarea1" > Materiale necesare:</label>
+				<textarea id="textarea1"></textarea>
+				<p id="eroare-material"></p>
+				<input type="reset" id="buton-anuleaza2" value="Reseteaza"/>
+				<button onclick="submitMaterialForm()" id="buton-continua2"> Continua </button>
+				<button id="buton-inapoi2"> Inapoi </button>
+			</div>
 		</div>
 			
 		<!-- Footer -->

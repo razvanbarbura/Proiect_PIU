@@ -36,36 +36,27 @@
 			</nav>
 
 		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<header class="align-center">
-						<h1>Detalii sesizare</h1>
-						<p>Mașină parcată în zonă interzisă</p>
-					</header>
-
-			</section>
-
-				
-			<div class="container2">
-				 <div id="div_detalii">
-					
-					 <p><b>Categorie:</b> Parcari neregulamentare</p>
-					 <p><b>Data:</b> 27/10/2019 </p>
-					 <p><b>Status:</b> In proggres</p>
-					 <p><b>Descriere:</b> Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>
-					 <img src="images/masina_parcata.jpg" width="250px" height="250px">
-					 <img src="images/semn_parcarejpg.jpg" width="250px" height="250px">
-					 <img src="images/camera_icon.jpg" width="250px" height="250px">
-					 
-					 <br/>
-					 <button id="back-button"> Inapoi </button>
-					 <button id="ok-button"> Alege</button>
-                     <br/>
-				
-					 
-				 </div>
-			   
-			</div>
+		<br/>
+		<h1> Monitorizare Personal</h1>		
+		<div class="container5">
+            <img src="images/faza4.png" width="330px" height="130px">
+            <div id="decizie_form">
+                <h3 id="h3">Sesizare rezolvata ?</h3>
+				<div class="6u 12u$(small)">
+					<input type="radio" id="nu" name="confirmare">
+					<label for="nu">Nu</label>
+				</div>
+				<div class="6u 12u$(small)">
+					<input type="radio" id="da" name="confirmare">
+					<label for="da">Da</label>
+                </div>
+                <label for="detalii" > Detalii suplimentare:</label>
+                <textarea id="detalii"></textarea>
+                <input type="reset" id="buton-anuleaza4" value="Reseteaza"/>
+                <button id="buton-continua4" onclick="trimite()"> Finalizare </button>
+            </header>
+            </div>	
+		</div>
 			
 		<!-- Footer -->
 			<footer id="footer">

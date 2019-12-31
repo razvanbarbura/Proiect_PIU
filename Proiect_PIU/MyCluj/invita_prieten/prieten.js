@@ -42,15 +42,45 @@ function validateMessage() {
 }
 
 
+$(function() {
+  // HANDLE open-dialog CLICK
+  $('#buton-anuleaza4').on('click',function(e) {
+      // PREVENT DEFAULT BEHAVIOUR FOR <a/>
+      e.preventDefault();
+
+      // SAVE PROMISE RETURN
+      var res = showPrompt('Confirmati stergerea datelor introduse?');
+      res.then(function(ret) {
+          if (ret){
+              document.getElementById("detalii").innerHTML = "";
+          }
+      })
+  });
+});
+
+
 
 function submitForm() {
     
        if ((validateEmail() == true) &&   (validateMessage() == true)) {
+       // showPrompt_trimite('Selectati raspunsul la intrebare.');
+        var res = showPrompt_trimite('Email trimis cu succes!');
+        res.then(function(ret) {
+            if (ret){
+              window.location.href = "index.html";
+            }
+        })
      
-        window.location.href = "index.html";
+       
         return false; 
-      } else {
+      } else if ((validateEmail() == true) &&   (validateMessage() == false)) {
+        message_error.innerHTML ="Mesajul este obligatoriu !"  
+        email_error.innerHTML ="" ;   
         return false; 
+      } 
+
+      else{
+        return false;
       }
   }
 
@@ -88,6 +118,34 @@ function submitForm() {
   return p;
 }
  
+
+
+function showPrompt_trimite(msg)
+{
+  // CREATE A Promise TO RETURN
+  var p = new Promise(function(resolve, reject) {;
+    var dialog = $('<div/>', {class: 'popup'})
+      .append(
+        $('<p/>').html(msg)
+      )
+      .append(
+        $('<div/>', {class: 'text-right'})
+          .append($('<button/>', {class: 'btn btn-primary'}).css('margin-left', '32%').html('Ok').on('click', function() {
+            $('.overlay').remove();
+            // RESOLVE Promise TO true
+            resolve(true);
+          }))
+      );
+      
+    var overlay = $('<div/>', {class: 'overlay'})
+      .append(dialog);
+    $('body').append(overlay);
+    $(dialog).animate({top: '15%'}, 1000);
+  });
+  
+  // RETURN THE Promise
+  return p;
+}
 
 $(function() {
     // HANDLE open-dialog CLICK
