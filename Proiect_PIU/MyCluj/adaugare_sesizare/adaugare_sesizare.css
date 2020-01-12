@@ -1,6 +1,6 @@
-.sesizare #location{
-	width: 355px;
-}
+h1{
+    text-align: center;
+  }
 
 .page #descriere_sesizare{
 	margin-bottom: 10px;
@@ -8,10 +8,8 @@
 }
 
 #googleMap{
-	width:45%;
-	height:45%;
-	position: center;
-	left: 55%;
+	width: 96%;
+	height: 45%;
 }
 
 #tip{
@@ -21,11 +19,11 @@
 
 .dropdown{
 	margin-bottom: 0px;
-	width: 355px;
+	width: 96%;
 }
 
 .sesizare{
-	margin-left: 14%;
+	margin-left: 3%;
 	margin-top: -27%;
 }
 
@@ -39,30 +37,37 @@
 }
 
 textarea{
-	width: 355px;
+	width: 96%;
 	height: 80px;
 }
 
 .camera { 
-	width: 115px;
-	height: 100px;
+	width: 170px;
+	height: 145px;
 	margin-top: 2px;
-	margin-right: 2px;
+	margin-left: 60px;
 	margin-bottom: 15px;
+	position: center;
 }
 
 .anuleaza{
-	margin-right: 57px;
+	float: left;
+}
+
+.trimite{
+	float: right;
+	margin-right: 10px;;
 }
 
 button{
 	height: 50px;
 	width: 150px;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .back{
+	clear: both;
 	margin-top: 35px;
 	margin-bottom: 10px;
 }
@@ -78,10 +83,19 @@ button{
 	height: 30px;
 }
 
+#calendar{
+	margin-top: 27%;
+}
+
 .page{
 	clear: both;
 }
 
 #footer{
 	margin-left: -17%;
+}
+
+#location{
+	width: 96%;
+	margin-bottom: 10px;
 }

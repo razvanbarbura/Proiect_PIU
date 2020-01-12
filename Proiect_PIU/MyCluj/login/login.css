@@ -1,15 +1,16 @@
 input[type=text], input[type=password] {
   display: inline-block;
-  width: 330px;
+  width: 270px;
 }
 
 button {
+  margin-top: 5px;
   width: 135px;
 }
 
 .container {
   padding: 16px;
-  margin-left: 37%;
+  margin-left: 5%;
 }
 
 .container #username, #password{

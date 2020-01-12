@@ -68,12 +68,12 @@ function showPrompt_anulare(msg)
       )
       .append(
         $('<div/>', {class: 'text-right'})
-          .append($('<button/>', {class: 'btn btn-cancel'}).css('margin-right', '50px').html('Nu').on('click', function() {
+          .append($('<button/>', {class: 'btn btn-cancel'}).css({"margin-right": "50px", "weight": "10%"}).html('Nu').on('click', function() {
             $('.overlay').remove();
             // RESOLVE Promise TO false
             resolve(false);
           }))
-          .append($('<button/>', {class: 'btn btn-primary'}).html('Da').on('click', function() {
+          .append($('<button/>', {class: 'btn btn-primary'}).css('weight', '10%').html('Da').on('click', function() {
             $('.overlay').remove();
             // RESOLVE Promise TO true
             resolve(true);
