@@ -4,9 +4,6 @@ $(document).ready(() => {
         let userName = $('#username').val();
         let password = $('#password').val();
 
-        console.log(userName);
-        console.log(password);
-
         if (userName === "Mircea" && password === "mircea") {
             window.location.href = 'index.html';
             return false;
@@ -17,7 +14,8 @@ $(document).ready(() => {
                 return false;
             }
             else {
-                alert('User sau parola gresita');
+                document.getElementById("par").innerHTML="Username sau parola gresita !";
+                return false;
             }
     });
 
