@@ -1,0 +1,140 @@
+
+<html>
+	<head>
+		<title>Adăugare sesizare</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="revendicare_vouchere/revendicare_vouchere.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<nav class="left">
+					<a href="#menu"><span>Menu</span></a>
+				</nav>
+				<a href="index.html" class="logo"><img src="images/logo.png" width="80" /></a>
+				<nav class="right">
+					<p>Welcome, Mircea!</p>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Meniu principal</a></li>
+					<li><a href="cautare_sesizare.html">Căutare sesizare</a></li>
+					<li><a href="adaugare_sesizare.html">Adăugare sesizare</a></li>
+					<li><a href="revendicare_vouchere.html">Vouchere</a></li>
+					<li><a href="setari.html">Setari</a></li>
+				</ul>
+				<ul class="actions vertical">
+					<li><a href="#" class="button fit">Login</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h1>Revendica Vouchere</h1>
+						<br>
+						<br>
+						<br>
+					</header>
+
+
+
+				<div class="inner">
+					<form class="check">
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy1" name="filtrare1" unchecked onclick="filtrare()">
+							<label for="copy1">Mancare</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy2" name="filtrare2" unchecked onclick="filtrare()">
+							<label for="copy2">Sport</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy3" name="filtrare3" unchecked onclick="filtrare()">
+							<label for="copy3">Entertainment</label>
+						</div>
+                        <div class="6u 12u$(small)">
+							<input type="checkbox" id="copy4" name="filtrare4" unchecked onclick="filtrare()">
+							<label for="copy4">Vouchere revendicate</label>
+						</div>
+					</form>
+			</section>
+					
+		<!-- Two -->
+			<section id="three" class="wrapper">
+				<div class="inner flex flex-3">
+					<div id="first_voucher" class="flex-item box">
+						<div class="image fit">
+							<a href="revendicare_vouchere.html"><img src="images/marty.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>Marty</h3>
+							<h5>20% reducere la orice comanda de peste 50 de lei</h5>
+						</div>
+					</div>
+					<div id="second_voucher" class="flex-item box">
+						<div class="image fit">
+							<a href="revendicare_vouchere.html"><img src="images/cinema_city.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>Cinema City</h3>
+							<h5>30% reducere, in zilele de luni si marti</h5>
+						</div>
+					</div>
+					<div id="third_voucher" class="flex-item box">
+						<div class="image fit">
+							<a href="revendicare_vouchere.html"><img src="images/world_class.png" alt="" />
+						</div>
+						<div class="content">
+							<h3>World Class</h3>
+							<h5>10% reducere</h5>
+						</div>
+					</div>
+				</div>
+							
+                <div class="innerr3">
+                    <div><button id="prev" class="previous round" onclick="prev_voucher">&#8249;</button></div>
+                    <h6 id="xofy">1 of 3</h6>
+                    <div><button id="next" class="next round" onclick="next_voucher">&#8250;</button></div>
+                </div>
+                        
+                <div class="innerr2">
+                    <button type="button" class="back" onclick="window.location='index.html'">Inapoi</butto>
+                    <button class="anuleaza" type="button" id="revendica">Revendica</button>
+                </div>
+				
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Contactează-ne</h2>
+					<ul class="actions">
+						<li><span class="icon fa-phone"></span> <a href="#">+40 769-4689</a></li>
+						<li><span class="icon fa-envelope"></span> <a href="#">mycluj@contact.ro</a></li>
+						<li><span class="icon fa-map-marker"></span> Calea Moților 3, Cluj-Napoca 400001</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			<script src="http://code.jquery.com/jquery.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="revendicare_vouchere/revendicare_vouchere.js"></script>
+
+	</body>
+</html>
