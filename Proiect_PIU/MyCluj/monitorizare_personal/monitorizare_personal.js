@@ -1,6 +1,5 @@
 function showPrompt(msg)
 {
-  
   // CREATE A Promise TO RETURN
   var p = new Promise(function(resolve, reject) {;
     var dialog = $('<div/>', {class: 'popup'})
@@ -9,12 +8,12 @@ function showPrompt(msg)
       )
       .append(
         $('<div/>', {class: 'text-right'})
-          .append($('<button/>', {class: 'btn btn-cancel'}).css('margin-right', '15px').html('Nu').on('click', function() {
+          .append($('<button/>', {class: 'btn btn-cancel'}).css({"margin-right": "50px", "weight": "10%"}).html('Nu').on('click', function() {
             $('.overlay').remove();
             // RESOLVE Promise TO false
             resolve(false);
           }))
-          .append($('<button/>', {class: 'btn btn-primary'}).html('Da').on('click', function() {
+          .append($('<button/>', {class: 'btn btn-primary'}).css('weight', '10%').html('Da').on('click', function() {
             $('.overlay').remove();
             // RESOLVE Promise TO true
             resolve(true);
@@ -30,7 +29,8 @@ function showPrompt(msg)
   // RETURN THE Promise
   return p;
 }
- 
+
+
 
 function showPrompt_trimite(msg)
 {
@@ -71,7 +71,7 @@ $(function() {
         var res = showPrompt('Daca parasiti pagina o sa va pierdeti datele introduse. Confirmati aceasta actiune?');
         res.then(function(ret) {
             if (ret){
-                window.location.href = "index.html";
+                window.location.href = "index2.html";
             }
         })
     });
@@ -203,7 +203,7 @@ $(function() {
       var res = showPrompt('Daca parasiti pagina veti renunta la aceasta activitate. Confirmati aceasta actiune?');
       res.then(function(ret) {
           if (ret){
-            window.location.href = "index.html";
+            window.location.href = "index2.html";
           }
       })
   });
@@ -247,11 +247,11 @@ function trimite(){
         var res = showPrompt_trimite('Finalizati operatia?');
         res.then(function(ret) {
             if (ret){
-                window.location.href = "index.html";
+                window.location.href = "index2.html";
             }
         });
   }
   else{
-    showPrompt_trimite('Selectati raspunsul la intrebare.');
+    showPrompt_trimite('Selectati raspunsul la intrebare!');
   }
 } 
