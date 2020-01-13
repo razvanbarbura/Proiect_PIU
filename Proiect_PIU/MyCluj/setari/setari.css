@@ -27,3 +27,11 @@ h1{
 #notificare_pop_up, #notificare_email{
 	margin-left: 18%;
 }
+
+button{
+	height: 50px;
+	width: 130px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
