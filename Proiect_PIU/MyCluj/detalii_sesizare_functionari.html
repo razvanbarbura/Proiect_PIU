@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="detalii_sesizare/detalii_sesizare.css"/>
+		<link rel="stylesheet" href="detalii_sesizare_functionari/detalii_sesizare.css"/>
 	</head>
 	<body class="subpage">
 
@@ -14,9 +14,9 @@
 				<nav class="left">
 					<a href="#menu"><span>Menu</span></a>
 				</nav>
-				<a href="index.html" class="logo"><img src="images/logo.png" width="80" /></a>
+				<a href="index2.html" class="logo"><img src="images/logo.png" width="80" /></a>
 				<nav class="right">
-					<a>Bun venit, Mircea!</a>
+					<a>Bun venit, Alina!</a>
 					<a href="login.html" class="button alt">Deconectare</a>
 				</nav>
 			</header>
@@ -24,12 +24,11 @@
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Meniu principal</a></li>
+					<li><a href="index2.html">Meniu principal</a></li>
 					<li><a href="cautare_sesizare.html">Căutare sesizare</a></li>
-					<li><a href="adaugare_sesizare.html">Adăugare sesizare</a></li>
 					<li><a href="prieten.html">Invita prieten</a></li>
-					<li><a href="revendicare_vouchere.html">Vouchere</a></li>
 					<li><a href="setari.html">Setari</a></li>
+                    <li><a href="monitorizare_personal.html">Monitorizare personal</a></li>
 				</ul>
 				<ul class="actions vertical">
 					<li><a href="login.html" class="button fit">Logout</a></li>
@@ -41,7 +40,7 @@
 				<div class="inner">
 					<header class="align-center">
 						<h1>Detalii sesizare</h1>
-						<p>Mașină parcată în zonă interzisă</p>
+						<p>Autobuz mizerabil</p>
 					</header>
 
 			</section>
@@ -50,25 +49,42 @@
 			<div class="container">
 				 <div id="div_detalii">
 					<div id="googlemap"></div>
-					 <p><b>Categorie:</b> Parcari neregulamentare</p>
+					 <p><b>Categorie:</b>Transport public</p>
 					 <p><b>Data:</b> 27/10/2019 </p>
-					 <p><b>Status:</b> In proggres</p>
-					 <p><b>Descriere:</b> Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>
-					 <img src="images/masina_parcata.jpg" width="250px" height="250px">
-					 <img src="images/semn_parcarejpg.jpg" width="250px" height="250px">
-					 <img src="images/camera_icon.jpg" width="250px" height="250px">
-					 <br/>
+					 <p><b>Status:</b><div>
+						 <select name="categorii" class="dropdown" id="categorii">
+							<option value="Selecteaza_status">Selecteaza status</option>
+							<option value="in_curs_de_rezolvare">In curs de rezolvare</option>
+                            <option value="blocata">Blocata</option>
+							<option value="finalizata">Finalizata</option>
+						</select>
+					</div></p>
+                     
+					 <p><b>Descriere:</b> Autobuzul care circula pe linia 8 este de cele mai multe ori intr-o stare deplorabila. </p>
+					 <img src="images/8.jpg" width="250px" height="250px"><br>
+					 <img src="images/8int.jpg" width="250px" height="250px">
+					 <br>
 					 <img src="images/like-pressed.png" width="25px" height="25px" id="like_img" onclick="like()">
 					 <p id="like_number">3</p>
 					 <img src="images/dislike_pressed.png" width="25px" height="25px" id="dislike_img" onclick="dislike()">
 					 <p id ="dislike_number">0</p>
+                     <div><select name="categorii" class="dropdown" id="categorii">
+                        <option value="redirectionare_sesizare">Redirectionare sesizare</option>
+                        <option value="primarie">Primarie</option>
+                        <option value="politie_locala">Politie Locala</option>
+                        <option value="ctp">CTP</option>
+                        <option value="utilizator">Utilizator</option>
+                    </select>
+                     <button onclick="savebutton()" id="saveButton"> Salvare </button>
+					 </div>
+                     <br>
 					 <label for="comentariu"> Comentarii</label>
 					 <ul id="messageList"> </ul>
 					 <textarea id="comment"></textarea>
 					 <br/>
-					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
-					 <button id="rezolvareButton"> Rezolvare sesizare</button>
-					 <button id="back-button"> Inapoi </button>
+					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button><br>
+                    
+                <button id="back-button"> Inapoi </button>
 					 
 				 </div>
 			   
@@ -93,7 +109,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="detalii_sesizare/detalii_sesizare.js"></script>
+			<script src="detalii_sesizare_functionari/detalii_sesizare.js"></script>
 			<script src="http://code.jquery.com/jquery.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>

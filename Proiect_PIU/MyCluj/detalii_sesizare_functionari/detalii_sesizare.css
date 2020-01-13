@@ -1,0 +1,103 @@
+.container {
+  width: 100%;
+  height: 2400px;
+  
+}
+
+#div_detalii{
+    height: 925px;
+    width: 95%;
+    padding: 10px;
+    margin:auto;
+	margin-left: 5%;
+	margin-top: -27%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+  text-align: center;
+}
+
+
+#like_img{
+  margin-top: 10px;
+}
+
+#like_number{
+  width: 15px;
+  margin-left: 40px;
+  margin-top : -22px;
+}
+
+#dislike_img{
+  margin-left: 80px;
+  margin-top : -57px;
+}
+
+
+#dislike_number{
+  width: 15px;
+  margin-left: 130px;
+  margin-top : -59px;
+}
+
+#comment{
+  min-width: 90%;
+  max-width: 90%;
+  min-height: auto;
+  max-height: 200px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+button{
+	height: 50px;
+	width: 130px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+ #back-button, #saveButton{
+
+  height:50px;
+  border-radius: 10px;
+  width: 175px;
+  font-size: 12px;
+  margin-left: 15%;
+  margin-top: 15px;
+} 
+
+
+ #messageButton{
+  height:50px;
+  border-radius: 10px;
+  width: 175px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: 15%;
+} 
+
+
+
+#rezolvareButton{
+  height:50px;
+  border-radius: 10px;
+  width: 175px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-left: 15%;
+} 
+
+
+#googleMap{
+	width:100%;
+	height:45%;
+  margin-bottom: 20px;
+  margin-top: 65px;
+}
+

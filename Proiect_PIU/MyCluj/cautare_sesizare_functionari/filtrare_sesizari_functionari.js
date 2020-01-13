@@ -126,15 +126,15 @@ function myMap() {
 	contentString = '<h1>Masina parcata pe 2 parcari</h1>'+
 						 '<p>Masina B60SCL a parcat pe doua locuri de parcare.</p>';
 	var marker8 = createPin(map, 46.756653, 23.617627, 'Masina parcata pe 2 parcari', contentString, "images/parcari.png", "parcari");
-	// Pin 9 (parcari)
-	contentString = '<h1>Masina parcata in zona interzisa</h1>'+
-						 '<p>Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>'+
-						 '<a href="detalii_sesizare_functionari.html">Detalii</a>';
-	var marker9 = createPin(map, 46.769892, 23.610656, 'Masina parcata in zona interzisa', contentString, "images/parcari.png", "parcari");
-	// Pin 10 (transport)
+	// Pin 9 (transport)
 	contentString = '<h1>Autobuz mizerabil</h1>'+
-						 '<p>Multe piese desprinse din autobuz. Pericol mare de accidentare, si in plus este foarte murdar</p>';
-	var marker10 = createPin(map, 46.776783, 23.637229, 'Piese desprinse de pe cladire', contentString, "images/transport.png", "transport");
+						 '<p>Autobuzul care circula pe linia 8 este de cele mai multe ori intr-o stare deplorabila</p>'+
+						 '<a href="detalii_sesizare_functionari.html">Detalii</a>';
+	var marker9 = createPin(map, 46.777904220258044, 23.61159324645996, 'Mijloc de transport in comun foarte murdar', contentString, "images/transport.png", "transport");
+	// Pin 10 (parcari)
+	contentString = '<h1>Masina parcata in zona interzisa</h1>'+
+						 '<p>Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>';
+	var marker10 = createPin(map, 46.776783, 23.637229, 'Masina parcata in zona interzisa', contentString, "images/parcari.png", "parcari");
 	// Pin 11 (water)
 	contentString = '<h1>Canal infundat</h1>'+
 						 '<p>Canalizarea din zona este stricata. Apa nu se mai scurge in canal.</p>';
