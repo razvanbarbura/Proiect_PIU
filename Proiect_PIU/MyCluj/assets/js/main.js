@@ -85,15 +85,15 @@ function showPrompt_notificare(msg)
   return p;
 }
  
-$(function() {
-		// HANDLE open-dialog CLICK
-		$(document).keyup(function(e) {
-			if (e.keyCode === 81) { 
-			// PREVENT DEFAULT BEHAVIOUR FOR <a/>
-			e.preventDefault();
+// $(function() {
+// 		// HANDLE open-dialog CLICK
+// 		$(document).keyup(function(e) {
+// 			if (e.keyCode === 81) { 
+// 			// PREVENT DEFAULT BEHAVIOUR FOR <a/>
+// 			e.preventDefault();
  
-			// SAVE PROMISE RETURN
-			var res = showPrompt_notificare('Ați adăugat o sesizare nouă.');
-		};
-	});
-});
+// 			// SAVE PROMISE RETURN
+// 			var res = showPrompt_notificare('Ați adăugat o sesizare nouă.');
+// 		};
+// 	});
+// });

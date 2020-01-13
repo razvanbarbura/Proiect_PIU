@@ -191,6 +191,13 @@ function trimite(){
 		var res = showPrompt_trimite('Nu ati introdus toate datele necesare. Va rugam sa verificati daca ati introdus locatia, descrierea sesizarii si categoria sesizarii.');
 	}
 	else {
+    showPrompt_notificare('Ați adăugat o sesizare nouă.');
+    	res.then(function(ret) {
+				if (ret){
+					window.location.href = "index.html";
+				}
+			})
+// 		};
 		window.location.href = "index.html";
 	}
 }
