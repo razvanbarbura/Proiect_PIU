@@ -191,47 +191,15 @@ function trimite(){
 		var res = showPrompt_trimite('Nu ati introdus toate datele necesare. Va rugam sa verificati daca ati introdus locatia, descrierea sesizarii si categoria sesizarii.');
 	}
 	else {
-    showPrompt_notificare('Ați adăugat o sesizare nouă.');
-    	res.then(function(ret) {
-				if (ret){
-					window.location.href = "index.html";
-				}
-			})
-// 		};
-		window.location.href = "index.html";
+		var res = showPrompt_notificare('Ați adăugat o sesizare nouă.');
+		res.then(function(ret) {
+		if (ret){
+			window.location.href = "index.html";
+		}
+	});
 	}
 }
 
 window.onload = function(){
 	startTime();
-	var fileupload = document.getElementById("FileUpload1");
-	var fileupload2 = document.getElementById("FileUpload2");
-	var fileupload3 = document.getElementById("FileUpload3");
-    var image = document.getElementById("cam");
-    var image2 = document.getElementById("cam2");
-    var image3 = document.getElementById("cam3");
-    image.onclick = function () {
-        fileupload.click();
-    };
-	image2.onclick = function () {
-        fileupload2.click();
-    };
-	image3.onclick = function () {
-        fileupload3.click();
-    };
-	
-    fileupload.onchange = function () {
-        var fileName = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
-        image.setAttribute("src", "images/" + fileName);
-    };
-	
-	fileupload2.onchange = function () {
-        var fileName = fileupload2.value.split('\\')[fileupload2.value.split('\\').length - 1];
-        image2.setAttribute("src", "images/" + fileName);
-    };
-	
-	fileupload3.onchange = function () {
-        var fileName = fileupload3.value.split('\\')[fileupload3.value.split('\\').length - 1];
-        image3.setAttribute("src", "images/" + fileName);
-    };
 }
