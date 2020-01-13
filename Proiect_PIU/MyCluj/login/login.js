@@ -11,9 +11,14 @@ $(document).ready(() => {
             window.location.href = 'index.html';
             return false;
         }
-        else {
-            alert('User sau parola gresita');
-        }
+        else 
+            if (userName === "Alina" && password === "alina") {
+                window.location.href = 'index2.html';
+                return false;
+            }
+            else {
+                alert('User sau parola gresita');
+            }
     });
 
 });
