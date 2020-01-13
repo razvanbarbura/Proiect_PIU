@@ -61,7 +61,7 @@ textarea{
 
 button{
 	height: 50px;
-	width: 150px;
+	width: 130px;
 	margin-top: 20px;
 	margin-bottom: 10px;
 }
@@ -71,6 +71,7 @@ button{
 	margin-top: 35px;
 	margin-bottom: 10px;
 }
+
 
 #calendar_icon{
 	width: 30px;
@@ -99,3 +100,4 @@ button{
 	width: 96%;
 	margin-bottom: 10px;
 }
+
