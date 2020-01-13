@@ -1,11 +1,11 @@
 
 <html>
 	<head>
-		<title>Detalii sesizare</title>
+		<title>Căutare sesizare</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="detalii_sesizare/detalii_sesizare.css"/>
+		<link rel="stylesheet" href="cautare_sesizare_functionari/filtrare_sesizari_functionari.css" />
 	</head>
 	<body class="subpage">
 
@@ -24,11 +24,10 @@
 		<!-- Menu -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="index.html">Meniu principal</a></li>
-					<li><a href="cautare_sesizare.html">Căutare sesizare</a></li>
+					<li><a href="index2.html">Meniu principal</a></li>
+					<li><a href="cautare_sesizare_functionari.html">Căutare sesizare</a></li>
 					<li><a href="adaugare_sesizare.html">Adăugare sesizare</a></li>
 					<li><a href="prieten.html">Invita prieten</a></li>
-					<li><a href="revendicare_vouchere.html">Vouchere</a></li>
 					<li><a href="setari.html">Setari</a></li>
 				</ul>
 				<ul class="actions vertical">
@@ -40,40 +39,40 @@
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
-						<h1>Detalii sesizare</h1>
-						<p>Mașină parcată în zonă interzisă</p>
+						<h1>Căutare sesizare</h1>
+						<p>Filtrarea sesizărilor după categorie.</p>
 					</header>
 
+					<form class="check">
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy" name="filtrare1" checked>
+							<label for="copy">Asistenta sociala</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy2" name="filtrare2" checked>
+							<label for="copy2">Parcari neregulamentare</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy3" name="filtrare3" checked>
+							<label for="copy3">Strazi/alei/trotuare/poduri</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy4" name="filtrare4" checked>
+							<label for="copy4">Retele de apa/canalizare</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy5" name="filtrare5" checked>
+							<label for="copy5">Transport public</label>
+						</div>
+						<div class="6u 12u$(small)">
+							<input type="checkbox" id="copy6" name="filtrare6" checked>
+							<label for="copy6">Sesizarile mele</label>
+						</div>
+					</form>
 			</section>
-
-				
-			<div class="container">
-				 <div id="div_detalii">
-					<div id="googlemap"></div>
-					 <p><b>Categorie:</b> Parcari neregulamentare</p>
-					 <p><b>Data:</b> 27/10/2019 </p>
-					 <p><b>Status:</b> In proggres</p>
-					 <p><b>Descriere:</b> Masina CJ20FCL a parcat intr-o zona interzisa, astfel drumul catre Piata Cipariu este inaccesibila.</p>
-					 <img src="images/masina_parcata.jpg" width="250px" height="250px">
-					 <img src="images/semn_parcarejpg.jpg" width="250px" height="250px">
-					 <img src="images/camera_icon.jpg" width="250px" height="250px">
-					 <br/>
-					 <img src="images/like-pressed.png" width="25px" height="25px" id="like_img" onclick="like()">
-					 <p id="like_number">3</p>
-					 <img src="images/dislike_pressed.png" width="25px" height="25px" id="dislike_img" onclick="dislike()">
-					 <p id ="dislike_number">0</p>
-					 <label for="comentariu"> Comentarii</label>
-					 <ul id="messageList"> </ul>
-					 <textarea id="comment"></textarea>
-					 <br/>
-					 <button onclick="addComent()" id="messageButton"> Adauga Comentariu</button>
-					 <button id="rezolvareButton"> Rezolvare sesizare</button>
-					 <button id="back-button"> Inapoi </button>
-					 
-				 </div>
-			   
-			</div>
 			
+			<div id="googleMap"></div>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -93,9 +92,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			
-			<script src="detalii_sesizare/detalii_sesizare.js"></script>
-			<script src="http://code.jquery.com/jquery.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="cautare_sesizare_functionari/filtrare_sesizari_functionari.js"></script>
 			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBU-pySrcRm8L36LMFUwnZ2V--xMc9MTq0&callback=myMap"></script>
 
 			
